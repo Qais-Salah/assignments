@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assignment2.css">
+    <title>Qais' Website</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#about-me">About Me</a>
+            <a href="#my-hobbies">My Hobbies</a>
+            <a href="#guess-my-hobby">Guess My Hobby</a>
+            <a href="#my-future-goals">Future Goals</a>
+            <a href="#my-project">My Project</a>
+        </nav>
+    </header>
+
+    <section class="name">
+        <div class="profile-container">
+            <img src="me.jpg" alt="A photo of Qais" class="profile-image">
+            <h1 class="name-title">Qais Salah</h1>
+        </div>
+    </section>
+    
+
+    <section id="about-me" class="about-me">
+        <h1 class="section-title">About Me</h1>
+        <p class="about-text">My name is Qais Salah. I'm 19 years old and from Palestine.<br>
+        I'm studying CAP at An Najah National University. This is my second year.</p>
+    </section>
+
+    <section id="my-hobbies" class="my-hobbies">
+        <h1 class="section-title">My Hobbies</h1>
+        <ul class="hobbies-list">
+            <li class="hobby-item">Listening To Music</li>
+            <img src="music.jpg" alt="a pic of a headphone" class="hobby-image" width="200px">
+            <li class="hobby-item">Going to The Gym</li>
+            <img src="gym.jpg" alt="a photo of the gym" class="hobby-image" width="200px" height="150px">
+            <li class="hobby-item">Playing Chess</li>
+            <img src="Chess.jpg" alt="chess pieces" class="hobby-image" width="200px">
+        </ul>
+    </section>
+
+    <section class="favourite-hobby">
+        <h1 class="section-title">My Favourite Hobby</h1>
+        <ol class="favourite-hobby-list">
+            <li class="favourite-hobby-item">
+                <b>Listening to Music</b>: Can reduce stress, improve mood, and enhance focus. It also boosts creativity and can have positive effects on mental well-being.
+            </li>
+            <li class="favourite-hobby-item">
+                <b>Going to The Gym</b>: Improves physical health, increases strength, and boosts energy levels. It also enhances mental well-being by reducing stress and anxiety.
+            </li>
+            <li class="favourite-hobby-item">
+                <b>Playing Chess</b>: Enhances cognitive skills such as problem-solving and critical thinking, improves memory, and helps boost concentration and strategic planning abilities.
+            </li>
+        </ol>
+    </section>
+
+    <section id="guess-my-hobby" class="guess-my-hobby"> 
+        <h1 class="section-title">Guess My Hobby</h1>
+    <form class="hobby-form">
+        <label for="hobbies">Guess My Hobby:</label>
+        <select id="hobbies" name="hobbies" class="hobby-select">
+            <option value="Music">Listening to Music</option>
+            <option value="gym">Going to The Gym</option>
+            <option value="chess">Playing Chess</option>
+        </select>
+        <input type="submit" value="Submit" class="submit-button">
+    </form>
+</section>
+
+    <section id="my-future-goals" class="future-goals">
+        <h1 class="section-title">My Future Goals</h1>
+        <p class="goals-text">My future goals are to graduate from university successfully and pursue a career as a mobile developer.<br>
+             I aim to continuously grow my skills, contributing to innovative tech projects. Ultimately, I want to live a peaceful, fulfilling life,<br>
+             balancing career success with personal well-being.</p>
+    </section>
+
+    <section id="my-project" class="previous-project">
+        <h1 class="section-title">Previous Project</h1>
+        <a href="https://github.com/Qais-Salah/assignments" class="project-link">My Project</a>
+    </section>
+</body>
+</html>

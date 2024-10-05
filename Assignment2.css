@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+.header {
+    background-color: #35424a;
+    color: white;
+    padding: 15px 0;
+    position: fixed; 
+    width: 100%;
+    top: 0;
+    z-index: 1000; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #e8491d;
+}
+
+body > section {
+    margin-top: 80px;
+}
+
+.profile-container {
+    position: relative;
+    display: inline-block; 
+    text-align: center;
+}
+
+.profile-image {
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    border: 2px solid #35424a; 
+}
+
+
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    color: #35424a;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.about-text {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.hobbies-list {
+    list-style: none;
+    padding: 0;
+}
+
+.hobby-item {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.hobby-image {
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.favourite-hobby-list {
+    margin-left: 20px;
+}
+
+.favourite-hobby-item {
+    margin-bottom: 15px;
+}
+
+.hobby-form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.hobby-select {
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #35424a;
+    font-size: 16px;
+}
+
+.submit-button {
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #35424a;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #e8491d;
+}
+
+.goals-text {
+    margin-top: 10px;
+}
+
+.project-link {
+    color: #e8491d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar a {
+        padding: 10px;
+    }
+
+    section {
+        margin: 10px;
+    }
+
+    .hobby-form {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .hobby-select {
+        margin-right: 10px;
+    }
+}
